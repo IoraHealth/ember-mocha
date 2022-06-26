@@ -19,8 +19,14 @@ npm-debug.log*
 yarn-error.log
 testem.log
 
-# ember-try
+# ember-try7
 .node_modules.ember-try/
 bower.json.ember-try
 package.json.ember-try
-.DS_Store
+.DS_Store7
+/.node_modules.ember-try/
+/bower.json.ember-try
+/npm-shrinkwrap.json.ember-try
+/package.json.ember-try
+/package-lock.json.ember-try
+/yarn.lock.ember-try

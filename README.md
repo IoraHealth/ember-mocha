@@ -19,16 +19,14 @@ helpers contained in
 [Migration Guide](docs/migration.md).*
 
 
-Compatibility
-------------------------------------------------------------------------------
+## Compatibility
 
 * Ember.js v3.24 or above
 * Ember CLI v3.24 or above
 * Node.js v12 or above
 
 
-Installation
-------------------------------------------------------------------------------
+## Installation
 
 `ember-mocha` is an [Ember CLI](http://www.ember-cli.com/) addon, so install it
 as you would any other addon:
@@ -43,8 +41,7 @@ with this then `ember install ember-cli-mocha`, which should work exactly
 the same.
 
 
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 The following section describes the use of Ember Mocha with the latest modern
 Ember testing APIs, as laid out in the RFCs
@@ -183,8 +180,7 @@ Upgrading
 For instructions how to upgrade your test suite please read our
 [Migration Guide](docs/migration.md).
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
 
 Contributions are welcome. Please follow the instructions below to install and
 test this library.

@@ -1,24 +1,24 @@
-'use strict';
+"use strict";
 
-const { embroiderSafe, embroiderOptimized } = require('@embroider/test-setup');
+const { embroiderSafe, embroiderOptimized } = require("@embroider/test-setup");
 
 module.exports = async function () {
   return {
     useYarn: true,
     scenarios: [
       {
-        name: 'ember-lts-3.24',
+        name: "ember-lts-3.24",
         npm: {
           devDependencies: {
-            'ember-source': '~3.24.3',
+            "ember-source": "~3.24.3",
           },
         },
       },
       {
-        name: 'ember-lts-3.28',
+        name: "ember-lts-3.28",
         npm: {
           devDependencies: {
-            'ember-source': '~3.28.0',
+            "ember-source": "~3.28.0",
           },
         },
       },
@@ -27,26 +27,26 @@ module.exports = async function () {
       // `ember try:each` manually or from a customized CI config will run it
       // along with all the other scenarios.
       {
-        name: 'ember-default',
+        name: "ember-default",
         npm: {
-          devDependencies: {}
-        }
+          devDependencies: {},
+        },
       },
       {
-        name: 'ember-classic',
+        name: "ember-classic",
         env: {
           EMBER_OPTIONAL_FEATURES: JSON.stringify({
-            'application-template-wrapper': true,
-            'default-async-observers': false,
-            'template-only-glimmer-components': false,
+            "application-template-wrapper": true,
+            "default-async-observers": false,
+            "template-only-glimmer-components": false,
           }),
         },
         npm: {
           devDependencies: {
-            'ember-source': '~3.28.0',
+            "ember-source": "~3.28.0",
           },
           ember: {
-            edition: 'classic',
+            edition: "classic",
           },
         },
       },
